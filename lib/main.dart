@@ -9,14 +9,23 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          title: Text('Log ig log out'),
         ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
+        body:Column(
+          children: <Widget>[
+            Form(
+              child:_fernandoFormulario()
+            )
+          ],
         ),
       ),
     );
   }
+
+  _fernandoFormulario()=> Column(
+    children: <Widget>[
+      TextFormField(),
+      TextFormField()
+    ],
+  );
 }
